@@ -22,12 +22,12 @@ MSTREAM is an Android app for browsing movies and TV series and watching them th
 
 ```
 mstream/
-├── api/     # Node.js script that generates the encrypted servers.json
-├── app/     # React Native (Expo) project, builds the .apk
-│   ├── assets/ui/        # Place the built single index.html here
-│   └── src/config/config.tsx
-└── ui/      # Web interface (TypeScript + Tailwind), builds to one HTML file
-    └── dist-single/      # Output of the single-file build
+├── api/                            # Node.js script that generates the encrypted servers.json
+├── app/                            # React Native (Expo) project, builds the .apk
+│   ├── assets/ui/                  # Place the built single index.html here
+│   └── src/config/config.tsx       # Add the servers.json url and decrypt key
+└── ui/                             # Web interface (TypeScript + Tailwind), builds to one HTML file
+    └── dist-single/                # Output of the single-file build
 ```
 
 ## Prerequisites
