@@ -1,0 +1,25 @@
+{
+  "name": "MStream",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build:app": "vite build",
+    "build:single": "vite build --mode single",
+    "build": "npm run typecheck && npm run build:app && npm run build:single",
+    "encode:ui": "npx tsx encode.ts"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.6",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0",
+    "vite-plugin-singlefile": "^2.3.4"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3"
+  }
+}
